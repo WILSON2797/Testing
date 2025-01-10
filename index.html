@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Desa</title>
+    <link rel="stylesheet" href="style.css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Desa Sijambur Ajibata</div>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#berita">Berita</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <h1>Selamat Datang di Desa Sijambur Pardomuan Ajibata</h1>
+        <p>Mari berkembang bersama menuju desa yang lebih maju</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="gallery">
+        <h2>Galeri Foto Desa</h2>
+        <div class="upload-section">
+            <h3>Upload Foto Baru</h3>
+            <form id="uploadForm">
+                <input type="file" id="imageInput" accept="image/*" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+        <div class="gallery-grid" id="imageGallery">
+            <!-- Images will be displayed here -->
+        </div>
+    </section>
+
+    <!-- Modal for viewing images -->
+    <div id="imageModal" class="modal">
+        <a href="javascript:void(0)" class="modal-close" title="Tutup">&times;</a>
+        <img id="modalImage" src="" alt="Full-size Image">
+        <button id="prevButton" class="nav-button" title="Gambar Sebelumnya">&#10094;</button>
+        <button id="nextButton" class="nav-button" title="Gambar Selanjutnya">&#10095;</button>
+    </div>
+
+    <!-- Notification popup -->
+    <div id="notification" class="notification success">
+        <span class="icon">✓</span>
+        <span class="message">Upload Success!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sijambur Pardomuan. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
